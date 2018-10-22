@@ -1,0 +1,50 @@
+{
+  "name": "@hungry/ink-components",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "license": "TBD",
+  "sideEffects": false,
+  "babel": {
+    "presets": [
+      "@hungry/cli"
+    ]
+  },
+  "private": false,
+  "scripts": {
+    "build:babel": "babel src/** -d dist --extensions \".ts\",\".tsx\"",
+    "prepublish": "yarn test && yarn build",
+    "build:code": "babel src/** -d dist --extensions '.ts','.tsx'",
+    "test": "jest",
+    "build:declarations": "tsc --build tsconfig.json",
+    "build": "concurrently 'yarn build:declarations' 'yarn build:code'",
+    "watch": "concurrently 'yarn build:declarations --watch' 'yarn build:code --watch'"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "babel-jest"
+    },
+    "testRegex": "/__tests__/.*\\.test\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "ink": "next",
+    "react": "^16.5.2",
+    "chalk": "^2.4.1",
+    "utility-types": "^2.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@hungry/babel-preset-cli": "^0.0.4",
+    "babel-jest": "^23.6.0",
+    "concurrently": "^4.0.1",
+    "jest": "^23.6.0",
+    "typescript": "^3.1.3"
+  }
+}
