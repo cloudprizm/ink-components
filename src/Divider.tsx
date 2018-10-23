@@ -7,7 +7,7 @@ import { Colors, colorToObject } from './Colors'
 
 export const defaultDividerRenderer = ({ color, title, char, half }) =>
   <Color {...colorToObject(color)}>
-    <Box>{`${char.repeat(half)} ${title} ${char.repeat(half)}`}</Box>
+    <Box>{`${char.repeat(half)} ${title || ''} ${char.repeat(half)}`}</Box>
   </Color>
 
 const defaultProps = {
@@ -18,7 +18,7 @@ const defaultProps = {
 type DefaultProps = typeof defaultProps
 
 interface Props extends DefaultProps, Partial<FlexBoxProps> {
-  color?: Colors,
+  color?: Colors
   title?: string
 }
 
