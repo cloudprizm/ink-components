@@ -37,7 +37,8 @@
     "ink": "next",
     "react": "^16.5.2",
     "chalk": "^2.4.1",
-    "utility-types": "^2.1.0"
+    "utility-types": "^2.1.0",
+    "string-width": "^2.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
