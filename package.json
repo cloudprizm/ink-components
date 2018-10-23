@@ -9,6 +9,9 @@
       "@hungry/cli"
     ]
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "private": false,
   "scripts": {
     "build:babel": "babel src/** -d dist --extensions \".ts\",\".tsx\"",
