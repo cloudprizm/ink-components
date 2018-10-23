@@ -1,6 +1,6 @@
 {
   "name": "@hungry/ink-components",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "license": "TBD",
   "sideEffects": false,
@@ -34,15 +34,15 @@
     ]
   },
   "dependencies": {
+    "chalk": "^2.4.1",
     "ink": "next",
     "react": "^16.5.2",
-    "chalk": "^2.4.1",
-    "utility-types": "^2.1.0",
-    "string-width": "^2.1.1"
+    "string-width": "^2.1.1",
+    "utility-types": "^2.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
-    "@hungry/babel-preset-cli": "^0.0.4",
+    "@hungry/babel-preset-cli": "^0.1.0",
     "babel-jest": "^23.6.0",
     "concurrently": "^4.0.1",
     "jest": "^23.6.0",
