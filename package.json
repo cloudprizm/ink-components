@@ -1,6 +1,6 @@
 {
   "name": "@hungry/ink-components",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "license": "TBD",
   "sideEffects": false,
@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
-    "@hungry/babel-preset-cli": "^0.1.0",
+    "@hungry/babel-preset-cli": "^0.1.1",
     "babel-jest": "^23.6.0",
     "concurrently": "^4.0.1",
     "jest": "^23.6.0",
