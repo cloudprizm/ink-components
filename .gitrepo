@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/hungry-consulting/ink-components
+	branch = master
+	commit = ab66cf61272a09d9afe84e7a323fff78281b0104
+	method = merge
+	cmdver = 0.4.0
+	parent = b45e7f4639f7b99559db234fef9512f29ace2667
