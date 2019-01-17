@@ -6,7 +6,7 @@
 [subrepo]
 	remote = https://github.com/hungry-consulting/ink-components
 	branch = master
-	commit = 2be5c5ca277cce4356f2d2876d2eec2d1480f644
+	commit = c7e3363e7f51eacdf9215603ccc064f59b6b07aa
 	method = merge
 	cmdver = 0.4.0
-	parent = 39d54d2921a9ad38bacccf074ad93ce04b7fac25
+	parent = 8f746f65bdde06f5aaa8cad64d7ea667b89d7da3
